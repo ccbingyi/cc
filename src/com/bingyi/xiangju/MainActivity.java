@@ -144,6 +144,9 @@ public class MainActivity extends ActionBarActivity {
 					String x2 = matcher.group(2);
 					String x3 = matcher.group(3);
 					Map<String, Object> map = new HashMap<String, Object>();
+					if(x2==null||x2.matches("\\s*")){
+						x2 = "£®Œﬁ±ÍÃ‚£©";
+					}
 					map.put("title", x2);
 					map.put("time", x3);
 					map.put("id", x);
